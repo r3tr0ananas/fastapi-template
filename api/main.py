@@ -11,8 +11,8 @@ app = FastAPI(
     title = "api", 
     description = "", 
     license_info = {
-        "name": "Apache 2.0", 
-        "identifier": "MIT", 
+        "name": "", 
+        "identifier": "",
     }, 
     swagger_favicon_url = "", 
     version = f"v{__version__}",
