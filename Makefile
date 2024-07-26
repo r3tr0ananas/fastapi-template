@@ -2,4 +2,4 @@ build:
 	pip install . -U
 
 run:
-	uvicorn app.main:app --reload --port 8083
+	uvicorn api.main:app --reload --port 8083
