@@ -6,9 +6,6 @@ WORKDIR /app
 
 COPY /api ./api
 COPY pyproject.toml .
-COPY Makefile .
-
-RUN apt-get update && apt-get install -y git make
 
 RUN pip install .
 

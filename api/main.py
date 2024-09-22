@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from fastapi.requests import Request
-import os
+from os import environ
 
 from . import __version__
 
-ROOT_PATH = (lambda x: x if x is not None else "")(os.environ.get("ROOT_PATH"))
+ROOT_PATH = environ.get("ROOT_PATH")
 
 app = FastAPI(
     title = "api", 
